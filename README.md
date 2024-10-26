@@ -1,2 +1,2 @@
 # Project
-My Projection
+My Project
