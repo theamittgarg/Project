@@ -1,0 +1,773 @@
+{
+	"info": {
+		"_postman_id": "a1283f39-ec13-4141-bce2-ba69d2a15f7e",
+		"name": "Variable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GET All users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGNhMzk2ODNmODhiZmFkNjA0YjgyMSIsImlhdCI6MTYzMjQxMjU2Nn0.lVjuzm2T8xn0RCsMjlpB1ofOOhvnHA8-9eMM0MJivRc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/user/profile",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"86197666638\",\r\n    \"hash\": \"80db72d8164af73e413bdaa6753fdb7b7dbb171d901cd5e6315be972fe522fea.1632326083363\",\r\n    \"otp\": 4062\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/verifyotp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"verifyotp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Acount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Aditya Sharma\",\r\n    \"email\": \"adityashrm91191@gmail.com\",\r\n    \"mobile_number\": \"+918619766638\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/create-account",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"create-account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deactivate",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNGNhMzk2ODNmODhiZmFkNjA0YjgyMSIsImlhdCI6MTYzMjQxMjU2Nn0.lVjuzm2T8xn0RCsMjlpB1ofOOhvnHA8-9eMM0MJivRc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/user/de-activate",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"de-activate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Mobiler Number",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile_number\": \"+918619766638\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/verify-mobile_number",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"verify-mobile_number"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "GET All Feedback",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTIwMjE3ZTliNjcwNDJlNDVmZjU1ZCIsImlhdCI6MTYzMjc2NDQ0MH0.hNaKhHk2kIbWf11ThnMVe2LC5yNtUFTAvljwfe1Asuo",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/feedback",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"feedback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Feedback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"aditya@gmail.com\",\r\n    \"name\": \"Aditya Sharma\",\r\n    \"feedback\": \"Testing 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/feedback",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"feedback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Feedback",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTIwMjE3ZTliNjcwNDJlNDVmZjU1ZCIsImlhdCI6MTYzMjc2NDQ0MH0.hNaKhHk2kIbWf11ThnMVe2LC5yNtUFTAvljwfe1Asuo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/feedback/6152059fa4caca6ff18f339b",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"feedback",
+								"6152059fa4caca6ff18f339b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE All Feedback",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTIwMjE3ZTliNjcwNDJlNDVmZjU1ZCIsImlhdCI6MTYzMjc2NDQ0MH0.hNaKhHk2kIbWf11ThnMVe2LC5yNtUFTAvljwfe1Asuo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/feedback?=",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"feedback"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User List",
+			"item": [
+				{
+					"name": "POST User List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"aditya@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user-list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET User List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user-list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE User List",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user-list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user-list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tag",
+			"item": [
+				{
+					"name": "GET All Tag",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/tag",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"tag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "POST Tag",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tag\": \"Test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/tag",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"tag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Tag",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/tag/615345acb5d4c9849289c8a8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"tag",
+								"615345acb5d4c9849289c8a8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"item": [
+				{
+					"name": "GET All Blog",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/blog",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/blog/615341805adecc3686f17b85",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"615341805adecc3686f17b85"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Blog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tag_id\": \"6153416c5adecc3686f17b81\",\r\n    \"title\": \"Blog Test\",\r\n    \"description\": \"Testing description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/blog",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Blog",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tag_id\": \"615345acb5d4c9849289c8a8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/blog/61534080b274493da2fd35a3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"61534080b274493da2fd35a3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "FAQs",
+			"item": [
+				{
+					"name": "GET All FAQs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/blog",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/faqs/61534b3972dacf07ac3396fe",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"faqs",
+								"61534b3972dacf07ac3396fe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST FAQ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "{{admin}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"question\": \"Testing\",\r\n    \"answer\": \"test\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/faqs",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"faqs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Blog",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tag_id\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/blog/61534080b274493da2fd35a3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"61534080b274493da2fd35a3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Blog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:3000"
+		},
+		{
+			"key": "admin",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRhMzQ3ZGNjOGU3YTRiNTYxZmJjOSIsImlhdCI6MTYzMjkzNjc3NX0.-7d_WDgdPyNND0Y9LO8gZsaMfycapwrIncvZb5l8daw"
+		}
+	]
+}

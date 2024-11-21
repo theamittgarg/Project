@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link href="./css/styles.css" rel="stylesheet" />
+
+    <!-- Responsive CSS -->
+    <link href="./css/responsive.css" rel="stylesheet" />
+
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Variable</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.png"/>
+  </head>
+  <body>
+    <div class="loader_bg">
+        <div class="spinner-border" role="status">
+        </div>
+    </div>
+    <div class="overflow-hidden">
+      <div class="bg-color">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <!-- container -->
+            <a class="navbar-brand" href="index.html"
+              ><img class="mobile" src="./assets/iconBrand.svg"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><img src="./assets/fluent_navigation-16-regular.svg"
+              /></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto d-flex flex-row align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="Blogs.html"
+                    >Blogs</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <button
+                    id="btnClick"
+                    class="
+                      nav-link
+                      getBtn
+                      ms-4
+                      d-flex
+                      flex-row
+                      align-items-center
+                      justify-content-center
+                      btn
+                      getBtnMobile
+                    "
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Get early access &nbsp; ->
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container">
+          <div class="d-flex align-items-start row">
+            <div class="col-lg-6 top">
+              <h1 class="mb-4 F64">Learn & Earn<br />With Live Quizzes</h1>
+              <p class="mb-4 F18 width tabWidth">
+                In real-time in different categories of your choice be it Movies, Web series, Competitive exams, General Knowledge and many more.
+              </p>
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="btn btnGet2 mt-3 mb-4"
+              >
+                Get early access &nbsp;&nbsp;->
+              </button>
+              <p class="F14">1000+ early signups already</p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center hero-image">
+              <img
+                class="custom-image img-fluid"
+                src="./assets/Home Page Mobile.png"
+              />
+              <img class="widget1" src="./assets/Widget1.svg" />
+              <img class="widget2" src="./assets/Widget2.svg" />
+              <img class="widget3" src="./assets/Widget3.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center testimonial overflow-hidden">
+        <div
+          class="
+            container
+            d-flex
+            align-items-center
+            justify-content-center
+            mobile-test
+          "
+        >
+          <div>
+            <img src="./assets/testimonial.svg" />
+          </div>
+          <div class="text-start ms-4 mobile-center">
+            <p class="F18 mb-3 width" style="font-weight: 500">
+              After hearing about the Variable app from Abhishek, I fell in love with it. As an IAS aspirant, it's quite difficult for me to practice in real-time. And Variable is an amazing solution for this problem.
+            </p>
+            <p
+              class="F14 mb-2"
+              style="font-weight: 600; letter-spacing: 0.004em"
+            >
+              Abhas Mathur
+            </p>
+            <p class="F13Brand">IAS Aspirant</p>
+          </div>
+        </div>
+        <img class="arrow" src="./assets/designArrow.svg" />
+        <img class="vector1" src="./assets/Vector 199.svg" />
+        <img class="vector2" src="./assets/Vector 200.svg" />
+        <img class="arrowMobile" src="./assets/Group 7475.svg" />
+        <img class="vector1Mobile" src="./assets/Vector 200 (1).svg" />
+        <img class="vector2Mobile" src="./assets/Vector 200 (2).svg" />
+      </div>
+      <div class="content ms-4 me-4" style="background-color: #f7f7ff">
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-6 padContent">
+              <h2 class="F48 mb-3">Play Live Quizzes</h2>
+              <p class="F16 w-75 width">
+                In different categories like Sports, Movies, History,  IIT-JEE, NEET, SSC, and the list goes on in real-time with people from all over the country.
+              </p>
+              <button
+                class="
+                  getBtn
+                  d-flex
+                  flex-row
+                  align-items-center
+                  justify-content-center
+                  btn
+                "
+                style="margin-top: 2.5em"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Get early access &nbsp; ->
+              </button>
+            </div>
+            <div class="col-md-6 relative">
+              <img class="content-image" src="./assets/mockup1.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content ms-4 me-4" style="background-color: #fff9f3">
+        <div class="container">
+          <div class="row d-flex">
+            <div class="col-md-6 relative">
+              <img class="content-image-left" src="./assets/mockup2.png" />
+            </div>
+            <div class="col-md-6 padContent text-start">
+              <h2 class="F48 mb-3">Instant Withdraw</h2>
+              <p class="F16 w-75 width">
+                Your earnings in just 2 simple steps directly into your bank account.
+              </p>
+              <button
+                class="
+                  getBtn
+                  d-flex
+                  flex-row
+                  align-items-center
+                  justify-content-center
+                  btn
+                "
+                style="margin-top: 2.5em"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Get early access &nbsp; ->
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="content ms-4 me-4"
+        style="background-color: #edf4ff; margin-bottom: 0"
+      >
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-6 padContent">
+              <h2 class="F48 mb-3">Refer & Earn</h2>
+              <p class="F16 w-75 width">
+                Real cash up to Rs 500 by referring the app to your friends and family members.
+              </p>
+              <button
+                class="
+                  getBtn
+                  d-flex
+                  flex-row
+                  align-items-center
+                  justify-content-center
+                  btn
+                "
+                style="margin-top: 2.5em"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Get early access &nbsp; ->
+              </button>
+            </div>
+            <div class="col-md-6 relative">
+              <img class="content-image" src="./assets/mockup3.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="content ms-4 me-4 pt-5 pb-5 text-center pad"
+        style="background-color: #fff7f7; margin-bottom: 6em; margin-top: 6em;"
+      >
+        <div class="container">
+          <h2 class="F48 pb-4">Read our blogs</h2>
+          <div
+            id="carouselExampleControls"
+            class="carousel slide mt-4 mb-4"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner" id="blogs">
+              <div class="carousel-item active">
+                <div class="d-flex row align-items-center">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-5 text-end mbCustom">
+                    <a href="./Blog.html"><img class="blog-image" src="./assets/jonas-leupe-raWzvTTCBD8-unsplash (1).jpg" /></a>
+                  </div>
+                  <div class="col-lg-4 text-start ms-2 center">
+                    <p class="F14Brand">EDUCATION</p>
+                    <a href="./Blog.html"><h3 class="F32Brand mb-3 width" style="width: 90%">
+                      How practicing quizzes can help you improve your score in exams 
+                    </h3></a>
+                    <a href="./Blog.html"><p class="F16BrandBlack width" style="width: 80%">
+                      Here are 5 ways quizzes can help you improve your score in exams.
+                    </p></a>
+                    <a href="./Blog.html" class="F14W500" href="#">Read more -></a>
+                  </div>
+                  <div class="col-lg-2"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex row align-items-center">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-5 text-end mbCustom">
+                    <a href="./Blog1.html"><img class="blog-image" src="./assets/robin-worrall-FPt10LXK0cg-unsplash.jpg" /></a>
+                  </div>
+                  <div class="col-lg-4 text-start ms-2 center">
+                    <p class="F14Brand">EDUCATION</p>
+                    <a href="./Blog1.html"><h3 class="F32Brand mb-3 width" style="width: 90%">
+                      Most youth is wasting time just Scrolling. We have solution for it
+                    </h3></a>
+                    <a href="./Blog1.html"><p class="F16BrandBlack width" style="width: 80%">
+                      These days a lot of youth is wasting time just scrolling on social media, We just keep on scrolling and scrolling through social media 
+                    </p></a>
+                    <a href="./Blog1.html" class="F14W500" href="#">Read more -></a>
+                  </div>
+                  <div class="col-lg-2"></div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <img src="./assets/Group 7454.svg" />
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <img src="./assets/Group 7453.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials">
+        <div class="container">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex row align-items-center mobile-rev">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-5 center">
+                    <p class="F28 mb-4 width-mob" style="width: 88%">
+                      When I first tried the app prototype, I liked it, especially its UI. As a college student, it's cool to see an app that lets me earn money while playing quizzes.
+                    </p>
+                    <p class="F18W600 mb-2">Deval Sethi</p>
+                    <p class="F14Opacity">Student</p>
+                  </div>
+                  <div class="col-lg-5">
+                    <img
+                      class="custom-image mobile-img"
+                      src="./assets/testimonials1.png"
+                    />
+                  </div>
+                  <div class="col-lg-1"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex row align-items-center mobile-rev">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-5 center">
+                    <p class="F28 mb-4 width-mob" style="width: 88%">
+                      The variable is a cool app to test my knowledge and even earn from it, I was introduced to the app by Abhishek and really found it not just entertaining but a great way to improve my knowledge.
+                    </p>
+                    <p class="F18W600 mb-2">Aniruddh Parwal</p>
+                    <p class="F14Opacity">Student</p>
+                  </div>
+                  <div class="col-lg-5">
+                    <img
+                      class="custom-image mobile-img"
+                      src="./assets/testimonials.png"
+                    />
+                  </div>
+                  <div class="col-lg-1"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex row align-items-center mobile-rev">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-5 center">
+                    <p class="F28 mb-4 width-mob" style="width: 88%">
+                      As a government exam aspirant, it's really great to find an app that lets me do my daily practice so that I can be more efficient in my exams. Would definitely recommend Variable to all government exam aspirants.
+                    </p>
+                    <p class="F18W600 mb-2">Lakshay Sharma</p>
+                    <p class="F14Opacity">Gov. Exam Aspirant</p>
+                  </div>
+                  <div class="col-lg-5">
+                    <img
+                      class="custom-image mobile-img"
+                      src="./assets/testimonials2.png"
+                    />
+                  </div>
+                  <div class="col-lg-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="vector3" src="./assets/Vector 205.svg" />
+        <img class="vector4" src="./assets/Vector 206.svg" />
+        <img class="vector5" src="./assets/Vector 207.svg" />
+        <img class="vector3Mobile" src="./assets/Vector 200 (3).svg" />
+        <img class="vector4Mobile" src="./assets/Vector 201 (1).svg" />
+        <img class="vector5Mobile" src="./assets/Vector 200 (4).svg" />
+      </div>
+      <div class="faqHome">
+        <div class="container mt-5 mb-5">
+          <div class="d-flex align-items-start row">
+            <div class="col-lg-4 leftFaq">
+              <h2 class="F48 mb-3">FAQs</h2>
+              <p class="F16 mb-4">
+                In real time in categories like Movies, Web series, Competitive
+                exams & many more, real time in categories like Movies, Web
+                series, Competitive exams & many more.
+              </p>
+              <a
+                class="btn btnFeedback mt-3"
+                href="FAQ's.html"
+                onclick="getAllfaqs()"
+                >View all</a
+              >
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-7">
+              <div
+                class="accordion accordion-flush mt-4"
+                id="accordionFlushExample"
+              >
+                <div id="get-all-faqs"></div>
+              </div>
+            </div>
+          </div>
+          <img class="vector6" src="./assets/waveFaq.svg" />
+        </div>
+        <section class="overflow-hidden">
+          <div class="d-flex align-items-start row custom-row mt-5">
+            <div class="col-lg-6">
+              <div class="leftBottom text-center">
+                <h2 class="F48 mb-3">Be the first one to<br />get access</h2>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="btn btnGet2 mt-4"
+                >
+                  Get early access &nbsp;&nbsp;->
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="rightBottom text-center">
+                <h2 class="F48 mb-4" style="color: #5452f6">
+                  For latest updates<br />subscribe now
+                </h2>
+                <button class="btn btnGet2 mt-3" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Subscribe Now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="container">
+            <div class="d-flex row align-items-center pt-5 pb-5">
+              <div class="col-lg-2">
+                <a href="index.html"
+                  ><img class="mb-4" src="./assets/iconWhite.svg"
+                /></a>
+                <div
+                  class="
+                    d-flex
+                    socialLinks
+                    align-items-center
+                    justify-content-start
+                  "
+                >
+                  <a class="hover" href="#" target="_blank"
+                    ><img class="me-3" src="./assets/bx_bxl-facebook.svg"
+                  /></a>
+                  <a target="_blank" class="hover" href="https://instagram.com/variable_india?utm_medium=copy_link"
+                    ><img
+                      class="me-3"
+                      src="./assets/ant-design_instagram-filled.svg"
+                  /></a>
+                  <a target="_blank" class="hover" href="https://www.linkedin.com/company/variableindia/mycompany/?viewAsMember=true"
+                    ><img class="me-3" src="./assets/bx_bxl-linkedin.svg"
+                  /></a>
+                  <a target="_blank" class="hover" href="https://twitter.com/Variable_India?t=t0TEdt2sZcw9v9aZVtJTbg&s=09"><img src="./assets/bx_bxl-twitter.svg" /></a>
+                </div>
+              </div>
+              <div class="col-lg-5"></div>
+              <div
+                class="
+                  col-lg-3
+                  d-flex
+                  align-items-center
+                  links
+                  justify-content-between
+                "
+              >
+                <div class="">
+                  <a href="#"><p class="F16SM hover mb-4">Hiring</p></a>
+                  <a href="FAQ's.html"><p class="F16SM hover">FAQ</p></a>
+                </div>
+                <div>
+                  <a href="Blogs.html"><p class="F16SM hover mb-4">Blog</p></a>
+                  <a href="FeedbackName.html"><p class="F16SM hover">Feedback</p></a>
+                </div>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+            <div class="d-flex align-items-center justify-content-between pb-3">
+              <div class="d-flex">
+                <span class="F12 me-4">Copyright 2021</span>
+                <span class="F12 m-none">All Rights Reserved</span>
+              </div>
+              <div class="b-view">
+                <span class="F12">All Rights Reserved</span>
+              </div>
+              <div class="d-flex m-none">
+                <a href="#"><span class="F12 me-3">Legal Policy</span></a>
+                <a href="#"><span class="F12 ms-4">Privacy Policy</span></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-content-first">
+              <h5 class="F24 mb-4">Be the first to get access</h5>
+              <input
+                class="form-control form-control-lg mt-3 custom-modal-input"
+                type="text"
+                placeholder="Your Name"
+                aria-label=".form-control-lg example"
+                name="username"
+              />
+              <input
+                class="
+                  form-control form-control-lg
+                  mt-4
+                  mb-3
+                  custom-modal-input
+                "
+                type="email"
+                placeholder="Your Email Address"
+                aria-label=".form-control-lg example"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+              />
+              <button
+
+                class="btn-modal btn mt-4"
+                onclick="submitSignup()"
+              >
+                Count Me In
+              </button>
+            <button
+              type="button"
+              class="custom-btn-close btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/Group 7477.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-content-second">
+            <h5 class="F40 mb-4">
+              You are super <span style="color: #5452f6">cooool!</span>
+            </h5>
+            <p class="F16">
+              We have sucessfully registered your mail for the beta launch,
+              about to launch our app.
+            </p>
+            <button
+              class="btn-modal btn mt-3 ms-3 me-3"
+              href="#"
+            >
+              Share with all friends
+            </button>
+            <button
+              type="button"
+              class="custom-btn-close btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/Group 7477.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel2"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-content-already">
+            <h5 class="F40 mb-4">
+              Yess you are already a
+              <span style="color: #5452f6">part of family</span>
+            </h5>
+            <p class="F16 ms-3 me-3">
+              We have already registered your mail for the beta access,
+              launching soon.
+            </p>
+            <button class="btn-modal btn mt-3 ms-5 me-5" href="#">
+              Yesss!
+            </button>
+            <button
+              type="button"
+              class="custom-btn-close btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src="./assets/Group 7477.svg" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.querySelector("body").style.overflow = "hidden";
+      window.addEventListener("load", function () {
+        $(".loader_bg").fadeToggle();
+        document.querySelector("body").style.overflow = "auto";
+      });
+    </script>
+    <!-- <script src="./js/FAQ's.js"></script> -->
+    <script type="text/javascript">
+      const url = "https://node-vari-able.herokuapp.com/api/user";
+      var getAllFaqs = "<div></div>";
+      function getAllfaqs() {
+        $.ajax({
+          type: "GET",
+          url: `${url}/faqs`,
+          success: function (data) {
+            console.log(data);
+            for (let i = 0; i < 5; i++) {
+              if (data[i] == undefined) {
+                break;
+              }
+              getAllFaqs += `<div class="accordion-item mb-3">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo${i}"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  ${data[i].question}
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo${i}"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body F14BrandBlack">
+                  ${data[i].answer}
+                </div>
+              </div>
+            </div>`;
+            }
+            document.getElementById("get-all-faqs").innerHTML = getAllFaqs;
+          },
+          error: function (error) {
+            console.log(error);
+          },
+        });
+      }
+      getAllfaqs();
+    </script>
+    <script>
+      function submitSignup() {
+        var inputs = document.querySelectorAll("input");
+        var name = inputs[0].value;
+        var email = inputs[1].value;
+        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        console.log(email,name);
+        if (email.match(regexEmail)) {
+          var myHeaders = new Headers();
+          myHeaders.append("Content-Type", "application/json");
+
+          var raw = JSON.stringify({
+            name: name,
+            email: email,
+          });
+
+          var requestOptions = {
+            method: "POST",
+            headers: myHeaders,
+            body: raw,
+            redirect: "follow",
+          };
+
+          fetch("https://node-vari-able.herokuapp.com/api/user/user-list", requestOptions)
+            .then((response) => response.text())
+            .then((result) => {
+              inputs.forEach((inp)=> inp.value = "")
+              $('#exampleModal').modal('hide');
+              $('#exampleModal1').modal('show');
+            })
+            .catch((error) => {
+              inputs.forEach((inp)=> inp.value = "")
+              $('#exampleModal').modal('hide');
+              $('#exampleModal2').modal('show');
+            });
+        } else {
+          console.log(inputs);
+          inputs.forEach((inp)=> inp.value = "")
+          alert("Enter Vlid email");
+          
+        }
+      }
+    </script>
+    <!-- <script>
+      var myHeaders = new Headers();
+myHeaders.append("auth-token", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjM0NzQ2MjY5fQ.sEZ_FEHIO8_DLN8QuYtJ9AS3Bimf4v1rZGUy5zZPQ7Q");
+
+var raw = "";
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("http://18.236.101.126:3000/api/admin/blog", requestOptions)
+  .then(response => response.text())
+  .then((result) => {
+    result = JSON.parse(result);
+    var blogs = document.getElementById("blogs");
+    console.log(blogs)
+          var x =
+             `
+              <div class="carousel-item active">
+                <div class="d-flex row align-items-center">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-5 text-end mbCustom">
+                    <img class="blog-image" src=${result[0].image}" />
+                  </div>
+                  <div class="col-lg-4 text-start ms-2 center">
+                    <p class="F14Brand">${result[0].Tag.tag}</p>
+                    <h3 class="F32Brand mb-3 width" style="width: 90%">
+                      ${result[0].title}
+                    </h3>
+                    <p class="F16BrandBlack width" style="width: 80%">
+                      ${result[0].description}
+                    </p>
+                    <a href="/Blog.html?id=${result[0].id}" class="F14W500" href="#">Read more -></a>
+                  </div>
+                  <div class="col-lg-2"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex row align-items-center">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-5 text-end mbCustom">
+                    <img class="blog-image" src="${result[1].image}" />
+                  </div>
+                  <div class="col-lg-4 text-start ms-2 center">
+                    <p class="F14Brand">${result[1].Tag.tag}</p>
+                    <h3 class="F32Brand mb-3 width" style="width: 90%">
+                      ${result[1].title}
+                    </h3>
+                    <p class="F16BrandBlack width" style="width: 80%">
+                      ${result[1].description}
+                    </p>
+                    <a href="/Blog.html?id=${result[1].id}" class="F14W500" href="#">Read more -></a>
+                  </div>
+                  <div class="col-lg-2"></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex row align-items-center">
+                  <div class="col-lg-1"></div>
+                  <div class="col-lg-5 text-end mbCustom">
+                    <img class="blog-image" src="${result[2].image}" />
+                  </div>
+                  <div class="col-lg-4 text-start ms-2 center">
+                    <p class="F14Brand">${result[2].Tag.tag}</p>
+                    <h3 class="F32Brand mb-3 width" style="width: 90%">
+                      ${result[2].title}
+                    </h3>
+                    <p class="F16BrandBlack width" style="width: 80%">
+                      ${result[2].description}
+                    </p>
+                    <a href="/Blog.html?id=${result[2].id}" class="F14W500" href="#">Read more -></a>
+                  </div>
+                  <div class="col-lg-2"></div>
+                </div>
+              </div>
+              `
+              blogs.innerHTML = x;
+  })
+  .catch(error => console.log('error', error));
+    </script> -->
+    <script>
+      //Fix button focus issue
+
+var myModal = document.getElementById('exampleModal')
+
+myModal.addEventListener('hidden.bs.modal', function () {
+
+  setTimeout(() => {
+    console.log('Hiden')
+    document.getElementById("btnClick").blur()
+  }, 100);
+})
+    </script>
+  </body>
+</html>
